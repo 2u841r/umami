@@ -99,7 +99,13 @@ export function WorldMap({ websiteId, data, ...props }: WorldMapProps) {
           </Geographies>
         </ZoomableGroup>
       </ComposableMap>
-      {tooltip && <FloatingTooltip>{tooltip}</FloatingTooltip>}
+      {tooltip && (
+        <FloatingTooltip
+          style={{ color: 'var(--font-color)', backgroundColor: 'var(--base-color-2)' }}
+        >
+          {tooltip}
+        </FloatingTooltip>
+      )}
     </Column>
   );
 }

@@ -11,7 +11,7 @@ export function ChartTooltip({
   value?: ReactNode;
 }) {
   return (
-    <FloatingTooltip>
+    <FloatingTooltip style={{ color: 'var(--font-color)', backgroundColor: 'var(--base-color-2)' }}>
       <Column gap="3" fontSize="1">
         {title && <Row alignItems="center">{title}</Row>}
         <Row alignItems="center">
